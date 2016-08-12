@@ -243,19 +243,19 @@ p {
 .studies__cases {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 0 3rem;
 }
 
 .studies__pic {
-  flex-basis: 20%;
+  flex-basis: 21%;
   position: relative;
-  padding-bottom: 3rem
 }
 
 .studies__icon {
   color: $white;
   position: absolute;
-  transform: translate(-325%, 100%);
+  transform: translate(200%, -200%);
   z-index: 1;
 }
 
