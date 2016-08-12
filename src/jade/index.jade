@@ -45,22 +45,24 @@ html.no-js
       a(href="#"): icon(name="ei-play" size="l" class="feature__icon")
     //-close feature__layer
     
+    
     .brief__layer
       .brief__header
-        h3(class="brief__heading") How to post a brief
+        h3(class="brief__heading")=briefLayer.head
       .brief__process
         .brief__item
           <div data-icon="ei-pencil" data-size="l"></div>
-          h4(class="brief__subheading") 1. Submit your details
-          p Enter your details and send us your<br>brief idea
+          h4(class="brief__subheading")=briefLayer.sub1
+          p Enter your details and send us your brief idea
         .brief__item
           <div data-icon="ei-comment" data-size="l"></div>
-          h4(class="brief__subheading") 2. Let's chat!
-          p We will contact you then discuss the<br>brief a bit further
+          h4(class="brief__subheading")=briefLayer.sub2
+          p We will contact you then discuss the brief a bit further
         .brief__item
           <div data-icon="ei-like" data-size="l"></div>
-          h4(class="brief__subheading") 3. Go live
-          p Once you're happy, your brief will<br>be posted and you'll receive comments
+          h4(class="brief__subheading")=briefLayer.sub3
+          p Once you're happy, your brief will be posted and you'll receive comments
+
       .brief__post
         a(href="#" class="brief__button") Post a new brief
     //-close brief__layer
@@ -68,16 +70,21 @@ html.no-js
     .content__layer
       .content__item
         h3(class="content__heading") Get video content for any platform
-        ul
+        ul(class="content__list")
           li Social Media Video
           li Instagram and Vines
           li Branded Entertainment
           li Online Video Ads
-      .content__item
+          li Social Media Video
+          li Instagram and Vines
+          li Branded Entertainment
+          li Online Video Ads
+      .content__item(class="content__right")
         h3(class="content__heading") Let's do this together
         p Schedule a call with us, we will assist you for creating your project. For any questions, call us:
-        h4(class="content__heading") +44 7521775530
-        a(href="#" class="content__button") Contact us
+        h4(class="content__subheading") +44 7521775530
+        .content__contact
+          a(href="#" class="content__button") Contact us
     //-close content__layer
     
     .studies__layer
