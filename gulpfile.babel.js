@@ -99,6 +99,12 @@ gulp.task('sass', function() {
 
 gulp.task('jade', function() {
   var YOUR_LOCALS = {
+    briefLayer: {
+      head: "How to post a brief",
+      sub1: "1. Submit your details",
+      sub2: "2. Let's chat!",
+      sub3: "3. Go live",
+    },
   	heading: {
       one: "Amazing heading here",
       two: "The secrets to making 1M in 24 hours",
