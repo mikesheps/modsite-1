@@ -229,3 +229,32 @@ p {
     color: $yellow;
   }
 }
+
+.studies__layer {
+  display: flex;
+  flex-direction: column;
+}
+
+.studies__header {
+  display: flex;
+  justify-content: center;
+}
+
+.studies__cases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.studies__pic {
+  flex-basis: 20%;
+  position: relative;
+  padding-bottom: 3rem
+}
+
+.studies__icon {
+  color: $white;
+  position: absolute;
+  transform: translate(-325%, 100%);
+  z-index: 1;
+}
