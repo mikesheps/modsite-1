@@ -279,3 +279,33 @@ p {
 .pitch__subheading {
   padding-top: 1.5rem;
 }
+
+.client__layer {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+}
+
+.client__header {
+  color: $white;
+  display: flex;
+  justify-content: center;
+}
+
+.client__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.client__logo {
+  flex-basis: 26%;
+}
+
+.client__image {
+  fill: $white;
+  height: 175px;
+  object-fit: cover;
+  width: 100%;
+  margin: 1.5rem 0;
+}
