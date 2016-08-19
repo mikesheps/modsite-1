@@ -51,6 +51,7 @@ const defaultBrowser = 'google chrome canary';
 // Set path variables
 const sassPath = 'src/sass/**/*.scss';
 const jadePath = 'src/jade/pages/*.jade';
+const watchJadePath = 'src/jade/**/*.jade';
 const distPath = './dist';
 const imgPath = 'src/img/**/*';
 
@@ -80,7 +81,7 @@ gulp.task('serve', ['sass', 'jade', 'imgs'], function() {
   });
 
   gulp.watch(sassPath, ['sass']);
-  gulp.watch(jadePath, ['jade']);
+  gulp.watch(watchJadePath, ['jade']);
   gulp.watch('./dist/*.html').on('change', browserSync.reload);
 });
 

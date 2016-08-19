@@ -1,7 +1,10 @@
 .gallery-clients__layer
-  .gallery-clients__header
-    h3(class="pitch__heading")=galleryclients.heading
+  //-.gallery-clients__header
+  h3(class="gallery-clients__heading")=galleryclients.heading
   .gallery-clients__gallery
     each item in galleryclients.items
       .gallery-clients__logo
-        #{item.svg}
+        //- Learning moment!!!
+        //- #{variable}  use #{} for regular variable interpolation
+        //- !{variable}  use !{} for HTML string interpolation
+        !{item.svg}
