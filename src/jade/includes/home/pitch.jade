@@ -1,0 +1,9 @@
+.pitch__layer
+  .pitch__header
+    h3(class="pitch__heading")=pitch.heading
+  .pitch__process
+    each item in pitch.items
+      .pitch__item
+        icon(name="#{item.icon}" size="l" class="pitch__icon")
+        h4(class="pitch__subheading")=item.head
+        p=item.text

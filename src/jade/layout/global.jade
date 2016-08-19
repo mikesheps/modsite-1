@@ -1,0 +1,25 @@
+doctype
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      
+    block seo
+    
+    
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/style.css')
+    //-script(src='javascripts/vendor/modernizr-2.7.1.min.js')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.css">
+    
+  body
+    //- Build the utility and main navs
+    include ../includes/global/nav-utility
+    include ../includes/global/nav-main
+    
+    //- Page specific content goes here
+    block page
+
+
+    include ../includes/global/footer
+    include ../includes/global/scripts

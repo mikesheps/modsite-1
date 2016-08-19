@@ -1,0 +1,29 @@
+.gallery-clients__layer {
+  background-color: $black;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-clients__header {
+  color: $white;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-clients__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.gallery-clients__logo {
+  flex-basis: 33.33%;
+}
+
+.gallery-clients__image {
+  fill: $white;
+  height: 175px;
+  object-fit: cover;
+  width: 100%;
+  padding: 3rem;
+}

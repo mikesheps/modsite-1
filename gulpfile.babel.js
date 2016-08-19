@@ -38,6 +38,31 @@ import changed from 'gulp-changed';
 import imagemin from 'gulp-imagemin';
 import pngquant from 'imagemin-pngquant';
 
+// Data content
+import lorem from './src/jade/data/lorem';
+import images from './src/jade/data/images';
+import navutility from './src/jade/data/nav-utility';
+import nav from './src/jade/data/nav';
+import feature from './src/jade/data/feature';
+import brief from './src/jade/data/brief';
+import gallerystudies from './src/jade/data/gallery-studies';
+import pitch from './src/jade/data/pitch';
+import galleryclients from './src/jade/data/gallery-clients';
+
+// Make one big data object to pass into Jade
+const data = Object.assign({},
+  lorem,
+  images,
+  navutility,
+  nav,
+  feature,
+  brief,
+  gallerystudies,
+  pitch,
+  galleryclients);
+
+// import {data} from './src/jade/data/data';
+
 // Used to clear out /dist folder when we run gulp
 import del from 'del';
 
@@ -47,7 +72,7 @@ const defaultBrowser = 'google chrome canary';
 
 // Set path variables
 const sassPath = 'src/sass/**/*.scss';
-const jadePath = 'src/jade/*.jade';
+const jadePath = 'src/jade/pages/*.jade';
 const distPath = './dist';
 const imgPath = 'src/img/**/*';
 
@@ -98,28 +123,6 @@ gulp.task('sass', function() {
 });
 
 gulp.task('jade', function() {
-  var YOUR_LOCALS = {
-    briefLayer: {
-      head: "How to post a brief",
-      sub1: "1. Submit your details",
-      sub2: "2. Let's chat!",
-      sub3: "3. Go live",
-    },
-  	heading: {
-      one: "Amazing heading here",
-      two: "The secrets to making 1M in 24 hours",
-    },
-  	para: {
-      one: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      two : "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    imgs: {
-      one: "https://images.unsplash.com/photo-1443827423664-eac70d49dd0d",
-      two: "https://images.unsplash.com/photo-1436377734980-0ee004df570b",
-      three: "https://images.unsplash.com/19/desktop.JPG"
-    }
-  };
-
   gulp.src(jadePath)
     .pipe(plumber({
       errorHandler: function (error) {
@@ -127,7 +130,7 @@ gulp.task('jade', function() {
         this.emit('end');
     }}))
     .pipe(jade({
-      locals: YOUR_LOCALS,
+      locals: data,
       pretty: true
     }))
     .pipe(evilicons())
@@ -137,7 +140,7 @@ gulp.task('jade', function() {
 
 gulp.task('imgs', function () {
   return gulp.src(imgPath)
-    .pipe(changed(distPath))
+    .pipe(changed('dist/img'))
     .pipe(imagemin({
       progressive: true,
       use: [pngquant()]
@@ -149,9 +152,11 @@ gulp.task('imgs', function () {
 // Clearing task
 gulp.task('clean', function () {
   return del([
-    'dist/**/*',
+    //'dist/**/*',
+    'dist/index.html',
+    'dist/style.css'
     // we don't want to clean this file though so we negate the pattern
-    '!dist/img/'
+    //'!dist/img'
   ]);
 });
 

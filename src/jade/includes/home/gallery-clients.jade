@@ -1,0 +1,7 @@
+.gallery-clients__layer
+  .gallery-clients__header
+    h3(class="pitch__heading")=galleryclients.heading
+  .gallery-clients__gallery
+    each item in galleryclients.items
+      .gallery-clients__logo
+        #{item.svg}

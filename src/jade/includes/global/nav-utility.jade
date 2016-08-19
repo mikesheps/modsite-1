@@ -1,0 +1,12 @@
+.nav-utility__layer
+  .nav-utility__header
+    img(src="../img/ferrari.jpg" class="nav-utility__image")
+    h4(class="nav-utility__heading") Where the filmakers are
+  .nav-utility__bar
+    each item in navutility
+      if item.icon
+        a(href="#{item.url}" class="nav-utility__link")
+          icon(name="#{item.icon}" size="s" class="nav-utility__icon")
+          | #{item.text}
+      else
+        a(href="#{item.url}" class="nav-utility__link")=item.text

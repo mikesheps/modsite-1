@@ -1,0 +1,16 @@
+//- This page uses the global layout
+extends ../layout/global
+
+//- Fill in title and description for SEO
+block seo
+  title modsite-1 homepage
+  meta(name='description', content='This is the homepage')
+
+//- Index page specific content only
+block page
+  include ../includes/home/feature
+  include ../includes/home/brief
+  include ../includes/home/content
+  include ../includes/home/gallery-studies
+  include ../includes/home/pitch
+  include ../includes/home/gallery-clients

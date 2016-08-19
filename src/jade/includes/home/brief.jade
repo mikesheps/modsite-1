@@ -1,0 +1,12 @@
+.brief__layer
+  .brief__header
+    h3(class="brief__heading")=brief.heading
+  .brief__process
+    each item in brief.items 
+      .brief__item
+        <div data-icon="#{item.icon}" data-size="l"></div>
+        h4(class="brief__subheading")=item.head
+        p=item.text
+
+  .brief__post
+    a(href="#" class="brief__button")=brief.cta

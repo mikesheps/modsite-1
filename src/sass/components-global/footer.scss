@@ -1,0 +1,39 @@
+.footer__layer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem
+}
+
+.footer__image {
+  height: 2rem;
+  width: 6rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer__social {
+  list-style-type: none;
+}
+
+.footer__button {
+  border: 1px solid $black;
+  padding: .5rem 2rem .5rem 2rem;
+
+  &:hover {
+    background-color: $cyan;
+    color: $yellow;
+  }
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__icon {
+  margin-right: 1rem;
+}
