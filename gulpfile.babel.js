@@ -38,30 +38,8 @@ import changed from 'gulp-changed';
 import imagemin from 'gulp-imagemin';
 import pngquant from 'imagemin-pngquant';
 
-// Data content
-import lorem from './src/jade/data/lorem';
-import images from './src/jade/data/images';
-import navutility from './src/jade/data/nav-utility';
-import nav from './src/jade/data/nav';
-import feature from './src/jade/data/feature';
-import brief from './src/jade/data/brief';
-import gallerystudies from './src/jade/data/gallery-studies';
-import pitch from './src/jade/data/pitch';
-import galleryclients from './src/jade/data/gallery-clients';
-
-// Make one big data object to pass into Jade
-const data = Object.assign({},
-  lorem,
-  images,
-  navutility,
-  nav,
-  feature,
-  brief,
-  gallerystudies,
-  pitch,
-  galleryclients);
-
-// import {data} from './src/jade/data/data';
+// Data content to use with Jade
+import data from './src/jade/data/data';
 
 // Used to clear out /dist folder when we run gulp
 import del from 'del';

@@ -1,15 +1,23 @@
-// import lorem from 'lorem';
-// import images from 'images';
-// import nav from 'nav';
-// import feature from 'feature';
-// import brief from 'brief';
+// Import all data files
+import lorem from './lorem';
+import images from './images';
+import navutility from './nav-utility';
+import nav from './nav';
+import feature from './feature';
+import brief from './brief';
+import gallerystudies from './gallery-studies';
+import pitch from './pitch';
+import galleryclients from './gallery-clients';
 
-// import lorem from './src/jade/data/lorem';
-// import images from './src/jade/data/images';
-// import nav from './src/jade/data/nav';
-// import feature from './src/jade/data/feature';
-// import brief from './src/jade/data/brief';
-
-//const data = Object.assign({}, lorem, images, nav, feature, brief);
-
-// export {data};
+// Assign all data objects to one object to export
+export default Object.assign({},
+  lorem,
+  images,
+  navutility,
+  nav,
+  feature,
+  brief,
+  gallerystudies,
+  pitch,
+  galleryclients
+);
