@@ -27,6 +27,7 @@ img {
 }
 
 body {
+  color: #333;
   line-height: 1.5;
   width: 100vw;
 }
@@ -36,13 +37,6 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  color: $white;
-  font-size: 4rem;
-  line-height: 1;
-  text-align: center;
-}
-
 h3 {
   font-size: 2.25rem;
   margin: 3.5rem 0;
@@ -50,10 +44,6 @@ h3 {
 
 h4 {
   font-size: 1.25rem;
-}
-
-p {
-  color: #333;
 }
 
 .utility__layer {
@@ -121,12 +111,15 @@ p {
 .nav__search input {
   border-radius: 10px 0 0 10px;
   border-style: none;
+  height: 25px;
+  outline: none;
+  padding: 0 1rem;
 }
 
 .nav__mag {
   background-color: $white;
   border-radius: 0 10px 10px 0;
-  margin-top: .2rem;
+  margin-top: .4rem;
 }
 
 .feature__layer {
@@ -144,6 +137,13 @@ p {
 
 .feature__icon {
   color: $white;
+}
+
+.feature__heading {
+  color: $white;
+  font-size: 4rem;
+  line-height: 1;
+  text-align: center;
 }
 
 .brief__layer {
@@ -244,19 +244,23 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 0 3rem;
 }
 
 .studies__pic {
-  flex-basis: 21%;
+  flex-basis: 25%;
   position: relative;
+}
+
+.studies__pic img {
+  padding: 0  3rem;
 }
 
 .studies__icon {
   color: $white;
   position: absolute;
-  transform: translate(200%, -200%);
+  transform: translate(275%, -200%);
   z-index: 1;
+
 }
 
 .pitch__layer {
@@ -299,7 +303,7 @@ p {
 }
 
 .client__logo {
-  flex-basis: 26%;
+  flex-basis: 33.33%;
 }
 
 .client__image {
@@ -307,5 +311,45 @@ p {
   height: 175px;
   object-fit: cover;
   width: 100%;
-  margin: 1.5rem 0;
+  padding: 3rem;
+}
+
+.footer__layer {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem
+}
+
+.footer__image {
+  height: 2rem;
+  width: 6rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.footer__social {
+  list-style-type: none;
+}
+
+.footer__button {
+  border: 1px solid $black;
+  padding: .5rem 2rem .5rem 2rem;
+
+  &:hover {
+    background-color: $cyan;
+    color: $yellow;
+  }
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__icon {
+  margin-right: 1rem;
 }

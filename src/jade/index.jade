@@ -36,7 +36,7 @@ html.no-js
       a(href="#" class="nav__link") Live briefs
       a(href="#" class="nav__link") Discover
       form(class="nav__search", method="", action="")
-        input(type="text")
+        input(type="text" placeholder="search")
         label: icon(name="ei-search" size="s" class="nav__mag")
     //-close nav__layer
     
@@ -192,14 +192,15 @@ html.no-js
           a(href="#" class="footer__link") Contacts
       ul(class="footer__social")
         li
-          a(href="#" class="social__link"): icon(name="ei-sc-facebook" size="s") Facebook
+          a(href="#" class="social__link"): icon(name="ei-sc-facebook" size="s" class="social__icon") Facebook
         li
-          a(href="#" class="social__link"): icon(name="ei-sc-twitter" size="s") Twitter
+          a(href="#" class="social__link"): icon(name="ei-sc-twitter" size="s" class="social__icon") Twitter
         li
-          a(href="#" class="social__link"): icon(name="ei-sc-pinterest" size="s") Pinterest
+          a(href="#" class="social__link"): icon(name="ei-sc-pinterest" size="s" class="social__icon") Pinterest
         li
-          a(href="#" class="social__link"): icon(name="ei-sc-vimeo" size="s") Vimeo
-      a(href="#" class="footer__button") Join Newsletter
+          a(href="#" class="social__link"): icon(name="ei-sc-vimeo" size="s" class="social__icon") Vimeo
+      .footer__contact
+        a(href="#" class="footer__button") Join Newsletter
     //-close footer__layer
               
     script(src="https://cdn.jsdelivr.net/evil-icons/1.8.0/evil-icons.min.js")
