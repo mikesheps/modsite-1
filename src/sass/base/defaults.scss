@@ -5,40 +5,49 @@
 }
 
 :root {
-  font-size: 15px;
+  //font-size: 15px;
+  // This should be the base font-size
+  // for all paragraph text
+  // ! do not base it off of the font-size for the utility nav
+  font-size: 20px;
 }
 
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+
+  // this is not needed
+  //width: 100vw;
+}
+
+//Resets
+//
 img {
   height: auto;
   max-width: 100%;
 }
 
-body {
-  line-height: 1.5;
-  width: 100vw;
-}
 
-//Resets
 a {
   text-decoration: none;
 }
 
-h2 {
-  color: $white;
-  font-size: 4rem;
-  line-height: 1;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2.25rem;
-  margin: 3.5rem 0;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-p {
-  color: #333;
-}
+//h2 {
+//  color: $white;
+//  font-size: 4rem;
+//  line-height: 1;
+//  text-align: center;
+//}
+//
+//h3 {
+//  font-size: 2.25rem;
+//  margin: 3.5rem 0;
+//}
+//
+//h4 {
+//  font-size: 1.25rem;
+//}
+//
+//p {
+//  color: #333;
+//}

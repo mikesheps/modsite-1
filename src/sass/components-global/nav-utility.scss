@@ -1,44 +1,54 @@
 
-.nav-utility__layer {
-  display: flex;
-  justify-content: space-between;
-}
+.nav-utility {
 
-.nav-utility__header {
-  align-items: flex-end;
-  display: flex;
-  padding: 1rem;
-}
+  &__layer {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.nav-utility__image {
-  height: 2rem;
-  margin-right: .5rem;
-  width: 6rem;
-}
+  &__header {
+    align-items: flex-end;
+    display: flex;
+    font-size: .75rem;
+    padding: 1rem;
+  }
 
-.nav-utility__bar {
-  align-items: center;
-  display: flex;
-  margin-right: 1rem;
-}
+  &__image {
+    height: 2rem;
+    margin-right: .5rem;
+    width: 6rem;
+  }
 
-.nav-utility__link {
-  display: flex;
-  margin: 0 1rem;
-  text-align: center;
-}
+  &__bar {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+  }
 
-.nav-utility__icon {
-  margin-right: .5rem;
-}
+  &__link {
+    display: flex;
+    font-size: .75rem;
+    margin: 0 1rem;
+    text-align: center;
 
-.nav-utility__signup {
-  background-color: $yellow;
-  padding: .25rem;
-  text-align: center;
+    &:last-of-type {
+      background: $yellow;
+      padding: .5rem;
+    }
+  }
 
-  &:hover {
-    background-color: $cyan;
-    color: $yellow;
+  &__icon {
+    margin-right: .5rem;
+  }
+
+  &__signup {
+    background-color: $yellow;
+    padding: .25rem;
+    text-align: center;
+
+    &:hover {
+      background-color: $cyan;
+      color: $yellow;
+    }
   }
 }

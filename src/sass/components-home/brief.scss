@@ -1,36 +1,39 @@
-.brief__layer {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+.brief {
 
-.brief__heading {
-  margin: 3.5rem 0;
-}
+  &__layer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-.brief__process {
-  display: flex;
-  text-align: center;
-}
+  &__heading {
+    margin: 3.5rem 0;
+  }
 
-.brief__item {
-  flex-basis: 33.33%;
-  margin: 0 2.5rem;
-}
+  &__process {
+    display: flex;
+    text-align: center;
+  }
 
-.brief__subheading {
-  padding-top: 1.5rem;
-}
+  &__item {
+    flex-basis: 33.33%;
+    margin: 0 2.5rem;
+  }
 
-.brief__post {
-  background-color: $yellow;
-  font-weight: bold;
-  margin: 3.5rem 0;
-  padding: .5rem 2rem .5rem 2rem;
-  text-align: center;
+  &__subheading {
+    padding-top: 1.5rem;
+  }
 
-  &:hover {
-    background-color: $cyan;
-    color: $yellow;
+  &__post {
+    background-color: $yellow;
+    font-weight: bold;
+    margin: 3.5rem 0;
+    padding: .5rem 2rem .5rem 2rem;
+    text-align: center;
+
+    &:hover {
+      background-color: $cyan;
+      color: $yellow;
+    }
   }
 }
