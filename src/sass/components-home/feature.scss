@@ -1,23 +1,27 @@
-.feature__layer {
-  align-items: center;
-  background-image: url(../img/balloon.jpg), linear-gradient(-180deg, transparent, $pic_cover);
-  background-blend-mode: overlay;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 560px;
-  justify-content: center;
-}
+.feature {
 
-.feature__icon {
-  color: $white;
-}
+    &__layer {
+    align-items: center;
+    background-image: url(../img/balloon.jpg), linear-gradient(-180deg, transparent, $pic_cover);
+    background-blend-mode: overlay;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    justify-content: center;
+  }
 
-.feature__heading {
-  color: $white;
-  font-size: 4rem;
-  line-height: 1;
-  text-align: center;
+  &__icon {
+    color: $white;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+  }
+
 }

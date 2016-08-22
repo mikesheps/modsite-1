@@ -1,21 +1,24 @@
+.pitch {
 
-.pitch__layer {
-  align-items: center;
-  background-color: $gray;
-  display: flex;
-  flex-direction: column;
-}
+  &__layer {
+    align-items: center;
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+  }
 
-.pitch__process {
-  display: flex;
-  text-align: center;
-}
+  &__process {
+    display: flex;
+    text-align: center;
+  }
 
-.pitch__item {
-  flex-basis: 20%;
-  margin: 0 2.5rem 3rem 2.5rem;
-}
+  &__item {
+    flex-basis: 20%;
+    margin: 0 2.5rem 3rem 2.5rem;
+  }
 
-.pitch__subheading {
-  padding-top: 1.5rem;
+  &__subheading {
+    padding-top: 1.5rem;
+  }
+
 }

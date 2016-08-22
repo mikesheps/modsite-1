@@ -1,31 +1,32 @@
-.gallery-studies__layer {
-  display: flex;
-  flex-direction: column;
-}
+.gallery-studies {
 
-.gallery-studies__header {
-  display: flex;
-  justify-content: center;
-}
+  &__layer {
+    display: flex;
+    flex-direction: column;
+  }
 
-.gallery-studies__cases {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  &__heading {}
 
-.gallery-studies__pic {
-  flex-basis: 25%;
-  position: relative;
-}
+  &__cases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-.gallery-studies__pic img {
-  padding: 0  3rem;
-}
+  &__pic {
+    flex-basis: 25%;
+    position: relative;
+  }
 
-.gallery-studies__icon {
-  color: $white;
-  position: absolute;
-  transform: translate(275%, -200%);
-  z-index: 1;
+  &__pic img {
+    padding: 0  3rem;
+  }
+
+  &__icon {
+    color: $white;
+    position: absolute;
+    transform: translate(275%, -200%);
+    z-index: 1;
+  }
+
 }

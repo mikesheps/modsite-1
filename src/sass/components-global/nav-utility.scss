@@ -9,8 +9,11 @@
   &__header {
     align-items: flex-end;
     display: flex;
-    font-size: .75rem;
     padding: 1rem;
+  }
+
+  &__heading {
+    font-size: .75rem;
   }
 
   &__image {

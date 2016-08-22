@@ -1,4 +1,8 @@
 [class*="__heading"] {
   color: $black;
-  justify-content: center;
+  font-family: $condensed;
+  font-size: 2.5rem;
+  font-weight: 700;
+  //padding: 3rem;
+  text-align: center;
 }
