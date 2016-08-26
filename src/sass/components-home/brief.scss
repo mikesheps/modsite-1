@@ -4,11 +4,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 3rem;
   }
 
-  &__heading {
-    margin: 3.5rem 0;
-  }
+  &__heading {}
 
   &__process {
     display: flex;
@@ -25,15 +24,15 @@
   }
 
   &__post {
-    background-color: $yellow;
-    font-weight: bold;
-    margin: 3.5rem 0;
-    padding: .5rem 2rem .5rem 2rem;
-    text-align: center;
+    //background-color: $yellow;
+    //font-weight: bold;
+    //margin: 3.5rem 0;
+    //padding: .5rem 2rem .5rem 2rem;
+    //text-align: center;
 
-    &:hover {
-      background-color: $cyan;
-      color: $yellow;
-    }
+    //&:hover {
+    //  //background-color: $cyan;
+    //  color: $yellow;
+    //}
   }
 }

@@ -1,0 +1,16 @@
+.slider__layer
+  .slider__feature
+    a(href="#{slider[0].url}")
+      h2(class="slider__heading")=slider[0].heading
+      p=slider[0].subheading
+      
+    a(href="#")
+      icon(name="ei-play" size="m" class="slider__play")
+    a(href="#")
+      icon(name="ei-arrow-right" size="m" class="slider__icon")
+        
+  .slider__gallery
+    for item in slider
+      .slider__item
+        img(src="#{item.img}")
+        h4(class="slider__subheading")=item.heading

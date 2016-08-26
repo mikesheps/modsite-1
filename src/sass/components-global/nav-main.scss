@@ -14,6 +14,10 @@
     margin: 0 1rem;
   }
 
+  &__icon {
+    transform: translate(-90%, 40%);
+  }
+
   &__search {
     align-items: center;
     display: flex;
@@ -31,6 +35,6 @@
   &__mag {
     background-color: $white;
     border-radius: 0 10px 10px 0;
-    margin-top: .5rem;
+    margin-top: .4rem;
   }
 }

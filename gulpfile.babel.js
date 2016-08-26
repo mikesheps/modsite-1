@@ -144,6 +144,11 @@ gulp.task('clean', function () {
 gulp.task('default', ['clean', 'serve']);
 
 
+gulp.task('log', () => {
+  console.dir(data);
+}),
+
+
 
 // Todo task
 gulp.task('todo', () => {
