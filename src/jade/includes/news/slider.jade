@@ -4,10 +4,12 @@
       h2(class="slider__heading")=slider[0].heading
       p=slider[0].subheading
       
-    a(href="#")
-      icon(name="ei-play" size="m" class="slider__play")
-    a(href="#")
-      icon(name="ei-arrow-right" size="m" class="slider__icon")
+    a(href="#" class="slider__play")
+      icon(name="ei-play" size="l")
+    a(href="#" class="slider__previous")
+      icon(name="ei-arrow-left" size="m")
+    a(href="#" class="slider__next")
+      icon(name="ei-arrow-right" size="m")
         
   .slider__gallery
     for item in slider
