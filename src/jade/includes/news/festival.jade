@@ -1,0 +1,14 @@
+.festival__layer
+  .festival__label
+    img(src="../img/ferrari.jpg")
+    h3(class="festival__heading") film festival 2016
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore quia aliquid quas non doloribus, iure, culpa architecto ullam dicta aperiam sed pariatur officia.
+    a(href="#" class="festival__button") Find out more
+  for item in festival
+    .festival__item
+      img(src="#{item.img}")
+      a(href="#" class="festival__play")
+        icon(name="#{item.icon}" size="m")
+      h4(class="festival__subheading")=item.heading
+      p(class="festival__teaser")=item.text
+  
