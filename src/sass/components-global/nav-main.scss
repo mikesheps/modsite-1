@@ -14,6 +14,10 @@
     margin: 0 1rem;
   }
 
+  &__icon {
+    transform: translate(-90%, 40%);
+  }
+
   &__search {
     align-items: center;
     display: flex;

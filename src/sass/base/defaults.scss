@@ -14,7 +14,7 @@
 
 body {
   line-height: 1.5;
-  font-family: sans-serif;
+  font-family: $sans;
 
   // this is not needed
   //width: 100vw;
@@ -29,6 +29,7 @@ img {
 
 
 a {
+  color: $red;
   text-decoration: none;
 }
 

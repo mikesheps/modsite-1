@@ -1,27 +1,31 @@
-.gallery-clients__layer {
-  background-color: $black;
-  display: flex;
-  flex-direction: column;
-}
+.gallery-clients {
 
-.gallery-clients__heading {
-  color: $white;
-}
+  &__layer {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+  }
 
-.gallery-clients__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around
-}
+  &__heading {
+    color: $white;
+  }
 
-.gallery-clients__logo {
-  flex-basis: 33.33%;
-}
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+  }
 
-.gallery-clients__image {
-  fill: $white;
-  height: 175px;
-  object-fit: cover;
-  width: 100%;
-  padding: 3rem;
+  &__logo {
+    flex-basis: 33.33%;
+  }
+
+  &__image {
+    fill: $white;
+    height: 175px;
+    object-fit: cover;
+    width: 100%;
+    padding: 3rem;
+  }
+
 }

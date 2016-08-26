@@ -25,12 +25,7 @@ export default {
       {
         icon: "ei-gear",
         head: "5. Production",
-        text: "p The selected filmmakers go into production"
-      },
-      {
-        icon: "ei-image",
-        head: "3. Pitch",
-        text: "Filmakers optioned a treatment in response to a brief which is painted to a judging gallery"
+        text: "The selected filmmakers go into production"
       },
     ],
 

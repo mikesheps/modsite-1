@@ -9,6 +9,9 @@ import gallerystudies from './gallery-studies';
 import pitch from './pitch';
 import galleryclients from './gallery-clients';
 
+// news page data
+import slider from './slider';
+
 // Assign all data objects to one object to export
 export default Object.assign({},
   lorem,
@@ -19,5 +22,6 @@ export default Object.assign({},
   brief,
   gallerystudies,
   pitch,
-  galleryclients
+  galleryclients,
+  slider
 );
