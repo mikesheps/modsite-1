@@ -14,11 +14,14 @@
 
   &__item {
     flex-basis: 20%;
-    margin: 0 2.5rem 3rem 2.5rem;
+    //padding: 3rem;
   }
 
   &__subheading {
     padding-top: 1.5rem;
   }
 
+  &__p {
+    padding: 1rem 3rem 3rem 3rem;
+  }
 }

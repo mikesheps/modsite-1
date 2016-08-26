@@ -14,6 +14,7 @@
 
   &__heading {
     font-size: .75rem;
+    padding: 0;
   }
 
   &__image {
@@ -37,21 +38,15 @@
     &:last-of-type {
       background: $yellow;
       padding: .5rem;
+
+      &:hover {
+        background-color: $red;
+        color: $yellow;
+      }
     }
   }
 
   &__icon {
     margin-right: .5rem;
-  }
-
-  &__signup {
-    background-color: $yellow;
-    padding: .25rem;
-    text-align: center;
-
-    &:hover {
-      background-color: $cyan;
-      color: $yellow;
-    }
   }
 }
