@@ -8,6 +8,7 @@ import brief from './brief';
 import gallerystudies from './gallery-studies';
 import pitch from './pitch';
 import galleryclients from './gallery-clients';
+import festival from './festival';
 
 // news page data
 import slider from './slider';
@@ -23,5 +24,6 @@ export default Object.assign({},
   gallerystudies,
   pitch,
   galleryclients,
-  slider
+  slider,
+  festival
 );
