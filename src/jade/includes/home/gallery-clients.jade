@@ -3,8 +3,4 @@
   h3(class="gallery-clients__heading")=galleryclients.heading
   .gallery-clients__gallery
     each item in galleryclients.items
-      .gallery-clients__logo
-        //- Learning moment!!!
-        //- #{variable}  use #{} for regular variable interpolation
-        //- !{variable}  use !{} for HTML string interpolation
-        !{item.svg}
+      .gallery-clients__logo !{item.svg}

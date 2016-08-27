@@ -1,14 +1,14 @@
 .festival__layer
   .festival__label
-    img(src="../img/ferrari.jpg")
+    img(src="../img/ferrari.jpg" class="festival__ferrari")
     h3(class="festival__heading") film festival 2016
-    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore quia aliquid quas non doloribus, iure, culpa architecto ullam dicta aperiam sed pariatur officia.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero tempore quia aliquid
     a(href="#" class="festival__button") Find out more
   for item in festival
     .festival__item
       img(src="#{item.img}")
-      a(href="#" class="festival__play")
+      a(href="http://#{item.url}" class="festival__start")
         icon(name="#{item.icon}" size="m")
-      h4(class="festival__subheading")=item.heading
+      h4(class="festival__subheading")=item.head
       p(class="festival__teaser")=item.text
   

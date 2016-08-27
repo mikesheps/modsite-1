@@ -4,21 +4,21 @@ export default {
       img: "../img/reflection.jpg",
       icon: "ei-play",
       url: "google.com",
-      head: "Title of video",
+      head: "Title of the video",
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
     },
     {
       img: "../img/purple.jpg",
       icon: "ei-play",
       url: "google.com",
-      head: "Title of video",
+      head: "Title of the video",
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
     },
     {
-      img: "../img/sky.jpg",
+      img: "../img/water.jpg",
       icon: "ei-play",
       url: "google.com",
-      head: "Title of video",
+      head: "Title of the video",
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
     },
   ]
