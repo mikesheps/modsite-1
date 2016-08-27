@@ -25,7 +25,7 @@
 
   &__play {
     color: $yellow;
-    padding: 1.5rem 3rem;
+    padding: 0 3rem;
   }
 
   &__next {
@@ -64,7 +64,7 @@
     img {
       height: 150px;
       object-fit: cover;
-      width: 100%;;
+      width: 100%;
     }
   }
 }
