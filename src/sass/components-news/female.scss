@@ -1,0 +1,59 @@
+.female {
+
+  &__layer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+  }
+
+  &__item {
+    flex-basis: 21%;
+  }
+
+  &__profile {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  &__pic {
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+  }
+
+  &__name {
+    padding-left: .5rem;
+  }
+
+  &__image {
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+  }
+
+  &__start {
+    color: $yellow;
+    position: absolute;
+    transform: translate(-300%, 130%);
+  }
+
+  &__subheading {
+    padding: 1rem 0;
+  }
+
+  &__ender {
+    text-align: center;
+    text-decoration: underline;
+  }
+}
