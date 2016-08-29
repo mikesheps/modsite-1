@@ -8,10 +8,12 @@ import brief from './brief';
 import gallerystudies from './gallery-studies';
 import pitch from './pitch';
 import galleryclients from './gallery-clients';
-import festival from './festival';
+
 
 // news page data
 import slider from './slider';
+import festival from './festival';
+import female from './female';
 
 // Assign all data objects to one object to export
 export default Object.assign({},
@@ -25,5 +27,6 @@ export default Object.assign({},
   pitch,
   galleryclients,
   slider,
-  festival
+  festival,
+  female
 );

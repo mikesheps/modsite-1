@@ -1,0 +1,19 @@
+.female__layer
+  .female__title
+    h3(class="female__heading") Hottest female directors
+    a(href="#" class="female__button") Follow
+  .female__gallery
+    for item in female
+      .female__item
+        .female__profile
+          img(src="#{item.pic}" class="female__pic")
+          h5(class="female__name")=item.head
+        .female__video
+          img(src="#{item.img}" class="female__image")
+          a(href="http://#{item.url}" class="female__start")
+            icon(name="#{item.icon}" size="m")
+        .female__caption
+          h4(class="female__subheading")=item.subhead
+          p(class="female__teaser")=item.text
+  .female__ender
+    a(href="#") Check out more videos
