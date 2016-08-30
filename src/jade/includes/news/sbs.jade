@@ -1,0 +1,42 @@
+mixin sbs(data, side)
+  div(class="sbs__#{side}")
+    h3(class="sbs__heading")=data[side].head
+    a(href="#" class="sbs__button")=data[side].butt
+    !{data[side].img}
+    h4(class="sbs__subheading")=data[side].subhead
+    p(class="sbs__text")=data[side].text
+    a(href="#" class="sbs__studies")=data[side].link
+
+
+.sbs__layer
+  a(href="#" class="sbs__previous")
+    icon(name="ei-arrow-left" size="m")
+  a(href="#" class="sbs__next")
+    icon(name="ei-arrow-right" size="m")
+  each item in sbs
+    +sbs(item, 'left')
+    +sbs(item, 'right')
+    
+    
+    
+    
+    
+    //- .sbs__left
+    //-   h3(class="sbs__heading")=item.left.head
+    //-   a(href="#" class="sbs__button")=item.left.butt
+    //-   a(href="#" class="sbs__previous")
+    //-     icon(name="#{item.left.icon}" size="m")
+    //-   !{item.left.img}
+    //-   h4(class="sbs__heading")=item.left.subhead
+    //-   p=item.left.text
+    //-   a(href="#")=item.left.link
+    //-   
+    //- .s-b-s__right
+    //-   h3(class="sbs__heading")=item.right.head
+    //-   a(href="#" class="sbs__button")=item.right.butt
+    //-   a(href="#" class="sbs__next")
+    //-     icon(name="#{item.right.icon}" size="m")
+    //-   img(src="#{item.right.img}" class="sbs__image")
+    //-   h4(class="sbs__heading")=item.right.subhead
+    //-   p=item.right.text
+    //-   a(href="#")=item.right.link

@@ -14,6 +14,7 @@ import galleryclients from './gallery-clients';
 import slider from './slider';
 import festival from './festival';
 import female from './female';
+import sbs from './sbs';
 
 // Assign all data objects to one object to export
 export default Object.assign({},
@@ -28,5 +29,6 @@ export default Object.assign({},
   galleryclients,
   slider,
   festival,
-  female
+  female,
+  sbs
 );

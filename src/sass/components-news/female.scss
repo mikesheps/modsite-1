@@ -9,6 +9,10 @@
     text-align: center;
   }
 
+  &__heading {
+    padding-bottom: 1rem;
+  }
+
   &__gallery {
     display: flex;
     justify-content: space-between;
@@ -53,6 +57,7 @@
   }
 
   &__ender {
+    padding-bottom: 3rem;
     text-align: center;
     text-decoration: underline;
   }
