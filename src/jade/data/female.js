@@ -2,7 +2,7 @@ export default {
   female: [
     {
       pic: "../img/terry.jpg",
-      head: "Michael Shepard",
+      head: "Terry Cruz",
       img: "../img/sky.jpg",
       icon: "ei-play",
       url: "google.com",
@@ -11,7 +11,7 @@ export default {
     },
     {
       pic: "../img/chris.jpg",
-      head: "Rich Dredge",
+      head: "Chris Farley",
       img: "../img/mountains.jpg",
       icon: "ei-play",
       url: "google.com",
@@ -20,7 +20,7 @@ export default {
     },
     {
       pic: "../img/joe.jpg",
-      head: "Nolan Finn",
+      head: "Joe Dirt",
       img: "../img/island.jpg",
       icon: "ei-play",
       url: "google.com",
@@ -29,7 +29,7 @@ export default {
     },
     {
       pic: "../img/carey.jpg",
-      head: "Austin Esposito",
+      head: "Jim Carey",
       img: "../img/purple.jpg",
       icon: "ei-play",
       url: "google.com",

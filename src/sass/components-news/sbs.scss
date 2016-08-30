@@ -1,0 +1,66 @@
+.sbs {
+
+  &__layer {
+    background-color: $gray;
+    display: flex;
+    position: relative;
+    text-align: center;
+  }
+
+  &__left {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  &__right {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  &__heading {
+    padding-bottom: 1rem;
+  }
+
+  &__button {
+    margin-bottom: 3rem;
+  }
+
+  &__previous {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  &__next {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  &__image {
+    background-color: $black;
+    fill: $white;
+    height: 250px;
+    object-fit: cover;
+    width: 65%;
+  }
+
+  &__subheading {
+    padding: 1rem;
+  }
+
+  &__text {
+    width: 65%;
+  }
+
+  &__studies {
+    margin: 3rem;
+    text-decoration: underline;
+  }
+}
