@@ -3,7 +3,7 @@ export default {
   nav: [
     {
       text: "Branded content",
-      url: "google.com",
+      url: "/news.html",
       dropdown: false
     },
     {

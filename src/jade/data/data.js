@@ -15,6 +15,7 @@ import slider from './slider';
 import festival from './festival';
 import female from './female';
 import sbs from './sbs';
+import january from './january';
 
 
 
@@ -32,5 +33,6 @@ export default Object.assign({},
   slider,
   festival,
   female,
-  sbs
+  sbs,
+  january
 );
