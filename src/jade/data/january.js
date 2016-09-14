@@ -1,94 +1,96 @@
 export default {
-  heading: 'Hottest January playlists',
-  followCta: {
-    text: 'Follow',
-    url: 'http://google.com',
-  },
-  footerCta: {
-    text: 'Check out more playlist',
-    url: 'http://google.com',
-  },
-  content: [
-    {
-      profile: {
-        image: '../img/joe.jpg',
-        name: 'Jim Carey',
-      },
-      image: '../img/kevin.jpg',
-      title: 'Title of the playlist',
-      teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
-
-      list: [
-        {
-          image: '../img/tracy.jpg',
-          title: 'Title of the video',
-          name: 'Tracy Morgan',
-        },
-        {
-          image: '../img/terry.jpg',
-          title: 'Title of the video',
-          name: 'Terry Cruz',
-        },
-        {
-          image: '../img/will.png',
-          title: 'Title of the video',
-          name: 'Will Ferrell',
-        },
-      ]
+  january: {
+    heading: 'Hottest January playlists',
+    followCta: {
+      text: 'Follow',
+      url: 'http://google.com',
     },
-    {
-      profile: {
-        image: '',
-        name: '',
-      },
-      image: '',
-      title: '',
-      teaser: '',
-
-      list: [
-        {
-          image: '',
-          title: '',
-          name: '',
-        },
-        {
-          image: '',
-          title: '',
-          name: '',
-        },
-        {
-          image: '',
-          title: '',
-          name: '',
-        },
-      ]
+    footerCta: {
+      text: 'Check out more playlist',
+      url: 'http://google.com',
     },
-    {
-      profile: {
-        image: '',
-        name: '',
-      },
-      image: '',
-      title: '',
-      teaser: '',
+    content: [
+      {
+        profile: {
+          image: '../img/joe.jpg',
+          name: 'Joe Dirt',
+        },
+        image: '../img/chris.jpg',
+        title: 'Title of the playlist',
+        teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
 
-      list: [
-        {
-          image: '',
-          title: '',
-          name: '',
+        list: [
+          {
+            image: '../img/tracy.jpg',
+            title: 'Title of the video',
+            name: 'Tracy Morgan',
+          },
+          {
+            image: '../img/terry.jpg',
+            title: 'Title of the video',
+            name: 'Terry Cruz',
+          },
+          {
+            image: '../img/will.png',
+            title: 'Title of the video',
+            name: 'Will Ferrell',
+          },
+        ]
+      },
+      {
+        profile: {
+          image: '../img/carey.jpg',
+          name: 'Jim Carey',
         },
-        {
-          image: '',
-          title: '',
-          name: '',
+        image: '../img/kevin.jpg',
+        title: 'Title of the playlist',
+        teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+
+        list: [
+          {
+            image: '../img/tracy.jpg',
+            title: 'Title of the video',
+            name: 'Tracy Morgan',
+          },
+          {
+            image: '../img/terry.jpg',
+            title: 'Title of the video',
+            name: 'Terry Cruz',
+          },
+          {
+            image: '../img/will.png',
+            title: 'Title of the video',
+            name: 'Will Ferrell',
+          },
+        ]
+      },
+      {
+        profile: {
+          image: '../img/jim.jpg',
+          name: 'Jim Gaffigan',
         },
-        {
-          image: '',
-          title: '',
-          name: '',
-        },
-      ]
-    },
-  ]
-};
+        image: '../img/balloon.jpg',
+        title: 'Title of the playlist',
+        teaser: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+
+        list: [
+          {
+            image: '../img/tracy.jpg',
+            title: 'Title of the video',
+            name: 'Tracy Morgan',
+          },
+          {
+            image: '../img/terry.jpg',
+            title: 'Title of the video',
+            name: 'Terry Cruz',
+          },
+          {
+            image: '../img/will.png',
+            title: 'Title of the video',
+            name: 'Will Ferrell',
+          },
+        ]
+      }
+    ]
+  }
+}

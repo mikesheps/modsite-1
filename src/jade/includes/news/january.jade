@@ -1,26 +1,28 @@
 .january__layer
   .january__title
     h3(class="january__heading")=january.heading
-    a(href="#{january.followCta.url}" class="january__button")= january.followCta.text
+    a(href="#{january.followCta.url}" class="january__button")=january.followCta.text
     
-  .january
+  .january__content
     each item in january.content
-      .january__profile
-        img(src="#{item.profile.image}" class="january__pic")
-        h5(class="january__name")= item.profile.name
-      img(src="#{item.image}" class="january__image")
-      h4(class="january__subheading")= item.title
-      p(class="january__text")= item.teaser
       .january__item
-        each subitem in item.list
-          .january__subitem
-            img(src="#{subitem.image}" class="january__clip")
-            .january__caption
-              h5(class="january__label")= subitem.title
-              h6(class="january__call")= subitem.name
+        .january__profile
+          img(src="#{item.profile.image}" class="january__pic")
+          h5(class="january__name")= item.profile.name
+          
+        img(src="#{item.image}" class="january__image")
+        h4(class="january__subheading")= item.title
+        p(class="january__text")= item.teaser
+        .january__list
+          each subitem in item.list
+            .january__subitem
+              img(src="#{subitem.image}" class="january__clip")
+              .january__caption
+                h5(class="january__label")= subitem.title
+                h6(class="january__call")= subitem.name
       
   .january__ender
-    a(href="#{january.footerCta.text}" class="january__check")= january.footerCta.text
+    a(href="#{january.footerCta.url}" class="january__check")= january.footerCta.text
 
 
 
