@@ -1,0 +1,8 @@
+.ferrari__layer
+  .ferrari__title
+    h3(class="ferrari__heading")=ferrari.head
+    img(src="#{ferrari.image}" class="ferrari__logo")
+  p(class="ferrari__teaser")=ferrari.teaser
+  .ferrari__submits
+    a(href="http://#{ferrari.pitchCta.url}" class="ferrari__button")=ferrari.pitchCta.text
+    a(href="http://#{ferrari.briefCta.url}" class="ferrari__button")=ferrari.briefCta.text

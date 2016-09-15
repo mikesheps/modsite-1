@@ -4,7 +4,7 @@
     a(href="#{january.followCta.url}" class="january__button")=january.followCta.text
     
   .january__content
-    each item in january.content
+    for item in january.content
       .january__item
         .january__profile
           img(src="#{item.profile.image}" class="january__pic")
@@ -14,7 +14,7 @@
         h4(class="january__subheading")= item.title
         p(class="january__text")= item.teaser
         .january__list
-          each subitem in item.list
+          for subitem in item.list
             .january__subitem
               img(src="#{subitem.image}" class="january__clip")
               .january__caption

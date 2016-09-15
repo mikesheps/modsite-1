@@ -1,5 +1,5 @@
 .nav-main__layer
-  each item in nav
+  for item in nav
     if item.dropdown
       a(href="#{item.url}" class="nav-main__link")=item.text
       icon(name="ei-chevron-down" size="s" class="nav-main__icon")

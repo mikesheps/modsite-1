@@ -13,7 +13,7 @@ mixin sbs(data, side)
     icon(name="ei-arrow-left" size="m")
   a(href="#" class="sbs__next")
     icon(name="ei-arrow-right" size="m")
-  each item in sbs
+  for item in sbs
     +sbs(item, 'left')
     +sbs(item, 'right')
     
