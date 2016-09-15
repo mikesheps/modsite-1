@@ -16,7 +16,7 @@ import festival from './festival';
 import female from './female';
 import sbs from './sbs';
 import january from './january';
-
+import ferrari from './ferrari';
 
 
 // Assign all data objects to one object to export
@@ -34,5 +34,6 @@ export default Object.assign({},
   festival,
   female,
   sbs,
-  january
+  january,
+  ferrari
 );

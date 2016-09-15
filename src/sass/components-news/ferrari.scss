@@ -1,0 +1,35 @@
+.ferrari {
+
+  &__layer {
+    align-items: center;
+    background-color: $gray;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+  }
+
+  &__heading {
+    padding: 3rem 1rem 2rem 1rem;
+  }
+
+  &__logo {
+    height: 75px;
+  }
+
+  &__teaser {
+    text-align: center;
+    width: 50%;
+  }
+
+  &__submits {
+    padding: 2rem 0 3rem 0;
+  }
+
+  &__button {
+    margin: 1rem;
+  }
+}

@@ -2,7 +2,7 @@
   //-.gallery-studies__header
   h2(class="gallery-studies__heading")=gallerystudies.heading
   .gallery-studies__cases
-    each item in gallerystudies.items
+    for item in gallerystudies.items
       .gallery-studies__pic
         img(src="../img/#{item.img}")
         icon(name="#{item.icon}" size="m" class="gallery-studies__icon")
