@@ -17,6 +17,7 @@ import female from './female';
 import sbs from './sbs';
 import january from './january';
 import ferrari from './ferrari';
+import latest from './latest';
 
 
 // Assign all data objects to one object to export
@@ -35,5 +36,6 @@ export default Object.assign({},
   female,
   sbs,
   january,
-  ferrari
+  ferrari,
+  latest
 );
