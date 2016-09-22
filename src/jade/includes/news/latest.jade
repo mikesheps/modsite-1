@@ -1,0 +1,17 @@
+.latest__layer
+  .latest__title
+    h2(class="latest__heading")=latest.heading
+  .latest__gallery
+    for item in latest.items
+      .latest__brief
+        if item.head
+          .latest__box
+            a(href="#" class="latest__checkbox")
+              h3(class="latest__head")=item.head
+              a(href="#" class="latest__next")
+              icon(name="#{item.icon}" size="m")
+          
+        img(src="#{item.img}" class="latest__clip")
+        h4(class="latest__subhead")=item.subhead
+        p(class="latest__teaser")=item.teaser
+        a(href="#" class="latest__read")=item.link
