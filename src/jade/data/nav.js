@@ -8,7 +8,7 @@ export default {
     },
     {
       text: "InstagramVine",
-      url: "google.com",
+      url: "/internal.html",
       dropdown: false
     },
     {
