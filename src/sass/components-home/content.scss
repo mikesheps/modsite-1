@@ -3,6 +3,10 @@
   &__layer {
     background-color: $gray;
     display: flex;
+
+    @include media('<=850px') {
+      flex-direction: column;
+    }
   }
 
   &__heading {}
@@ -15,13 +19,14 @@
     column-count: 2;
     padding: 0 3rem 3rem 3rem;
 
+    @include media('<=1215px') {
+      column-count: 1;
+      text-align: center;
+    }
+
     li {
       line-height: 2.5;
       list-style-type: none;
-
-      @include media('<=1215px') {
-        column-count: 1;
-      }
 
       &::before {
         content: 'º';

@@ -5,11 +5,18 @@
     background-color: $gray;
     display: flex;
     flex-direction: column;
+
+    @include media('<=1215px')
+
   }
 
   &__process {
     display: flex;
     text-align: center;
+
+    @include media('<=1050px') {
+      flex-direction: column;
+    }
   }
 
   &__item {

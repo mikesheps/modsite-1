@@ -18,6 +18,14 @@
 
   &__logo {
     flex-basis: 33.33%;
+
+    @include media('<=950px') {
+      flex-basis: 50%;
+    }
+
+    @include media('<=600px') {
+      flex-basis: 100%;
+    }
   }
 
   &__image {
