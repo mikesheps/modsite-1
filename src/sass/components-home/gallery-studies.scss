@@ -16,6 +16,18 @@
   &__pic {
     flex-basis: 25%;
     position: relative;
+
+    @include media('<=1275px') {
+      flex-basis: 33.33%;
+    }
+
+    @include media('<=1050px') {
+      flex-basis: 50%;
+    }
+
+    @include media('<=600px') {
+      flex-basis: 100%;
+    }
   }
 
   &__pic img {

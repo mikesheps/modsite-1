@@ -12,6 +12,10 @@
   &__process {
     display: flex;
     text-align: center;
+
+    @include media('<=650px') {
+      flex-direction: column;
+    }
   }
 
   &__item {
