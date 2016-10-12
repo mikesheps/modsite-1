@@ -2,7 +2,7 @@ export default {
 
   nav: [
     {
-      text: "Branded content",
+      text: "BrandedContent",
       url: "/news.html",
       dropdown: false
     },
@@ -14,7 +14,7 @@ export default {
     {
       text: "Animation",
       url: "google.com",
-      dropdown: true,
+      dropdown: false,
       subpages: [
         {
           text: "digital",
@@ -27,17 +27,17 @@ export default {
       ]
     },
     {
-      text: "Video art",
+      text: "VideoArt",
       url: "google.com",
       dropdown: false
     },
     {
-      text: "More Genres",
+      text: "Genres",
       url: "google.com",
-      dropdown: true
+      dropdown: false
     },
     {
-      text: "Live briefs",
+      text: "Briefs",
       url: "google.com",
       dropdown: false
     },

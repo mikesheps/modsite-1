@@ -1,13 +1,16 @@
-.nav-main__layer
-  for item in nav
-    if item.dropdown
-      a(href="#{item.url}" class="nav-main__link")=item.text
-      icon(name="ei-chevron-down" size="s" class="nav-main__icon")
-      
-    else
-      a(href="#{item.url}" class="nav-main__link")=item.text
-  
-  
-  form(class="nav-main__search", method="", action="")
-    input(type="text")
-    label: icon(name="ei-search" size="s" class="nav-main__mag")
+a#simple-menu(href='#sidr' class="siderBtn") &#9776; Toggle menu
+
+#sidr
+  .nav-main__layer
+    for item in nav
+      if item.dropdown
+        a(href="#{item.url}" class="nav-main__link")=item.text
+        icon(name="ei-chevron-down" size="s" class="nav-main__icon")
+        
+      else
+        a(href="#{item.url}" class="nav-main__link")=item.text
+    
+    
+    form(class="nav-main__search", method="", action="")
+      input(type="text")
+      label: icon(name="ei-search" size="s" class="nav-main__mag")

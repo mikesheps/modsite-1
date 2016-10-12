@@ -55,3 +55,47 @@ p {
 //p {
 //  color: #333;
 //}
+
+
+
+
+///* YouTube Responsive CSS for HubSpot */
+//
+//.hs-responsive-embed-youtube {
+//
+//position: relative;
+//
+//padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+//
+//padding-top: 25px;
+//
+//}
+//
+//.hs-responsive-embed-youtube iframe {
+//
+//position: absolute;
+//
+//width: 100%!important;
+//
+//height: 100%!important;
+//
+//}
+
+
+
+// Responsive Video embeds
+
+.responsive-video-embed {
+  position: relative;
+
+  // Maintain a 16:9 Aspect Ratio
+  padding-bottom: 56.25%;
+  //padding-top: 25px;
+  //overflow: hidden;
+
+  iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+  }
+}
