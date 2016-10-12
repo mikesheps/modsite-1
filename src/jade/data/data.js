@@ -19,6 +19,9 @@ import january from './january';
 import ferrari from './ferrari';
 import latest from './latest';
 
+// internal page data
+import video from './video';
+
 
 // Assign all data objects to one object to export
 export default Object.assign({},
@@ -37,5 +40,6 @@ export default Object.assign({},
   sbs,
   january,
   ferrari,
-  latest
+  latest,
+  video
 );

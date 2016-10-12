@@ -3,7 +3,13 @@
   &__layer {
     display: flex;
     justify-content: space-around;
-    padding: 3rem
+    padding: 3rem;
+
+    @include media('<=651px') {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__image {
@@ -16,10 +22,21 @@
     flex-direction: column;
     justify-content: space-between;
     list-style-type: none;
+
+    @include media('<=651px') {
+      padding: .5rem;
+      //flex-direction: row;
+      column-count: 2;
+    }
   }
 
   &__social {
     list-style-type: none;
+
+    @include media('<=651px') {
+    //  column-count: 2;
+      padding: .5rem;
+    }
   }
 
   //&__button {
@@ -39,4 +56,5 @@
 
 .social__icon {
   margin-right: 1rem;
+
 }

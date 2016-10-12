@@ -1,0 +1,28 @@
+.video__layer
+  .video__sidebar
+    .video__profile
+      img(src="#{video.sidebar.profile.pic}" class="video__pic")
+      h3(class="video__head")=video.sidebar.profile.head
+      h4(class="video__subhead")=video.sidebar.profile.subhead
+      p(class="video__text")=video.sidebar.profile.text
+      .video__count
+        for item in video.sidebar.profile.count
+          p
+            span.video__number=item.number
+            span.video__text=item.text
+      .video__cta
+          a(href="#" class="video__button")=video.sidebar.profile.cta.invite
+          a(href="#" class="video__button")=video.sidebar.profile.cta.contact
+    a(href="#{video.sidebar.more}" class="video__more")
+  .video__feature
+    .responsive-video-embed !{video.feature.videoEmbed}
+    h3(class="video__head")=video.feature.head
+    p(class="video__text")=video.feature.text
+    h4(class="video__subhead") MORE VIDEOS FROM HART
+    .video__gallery
+      for item in video.feature.gallery.items
+        .video__item
+            img(src="#{item.clip}" class="video__clip")
+            h4(class="video__subhead")=item.subhead
+            p(class="video__text")=item.text
+        

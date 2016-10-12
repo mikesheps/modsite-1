@@ -2,7 +2,7 @@ mixin sbs(data, side)
   div(class="sbs__#{side}")
     h3(class="sbs__heading")=data[side].head
     a(href="#" class="sbs__button")=data[side].butt
-    !{data[side].img}
+    | !{data[side].img}
     h4(class="sbs__subheading")=data[side].subhead
     p(class="sbs__text")=data[side].text
     a(href="#" class="sbs__studies")=data[side].link
